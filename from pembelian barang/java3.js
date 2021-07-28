@@ -25,7 +25,10 @@ function proses(){
         default:
         break;
     }
+    // deklarasi dibawah agar nilai harga berubah
     var harga=document.getElementById("harga").value;
+
+    // menghitung Total
     var total=jumlah*harga
     document.getElementById("total").value=total;
     

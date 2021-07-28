@@ -11,20 +11,26 @@
     <title>Program Penjualan barang</title>
   </head>
   <body>
+    <!-- Tampilan di layar -->
       <div class="container ">
         <div>
             <h1 class="text-center">PROGRAM PENJUALAN BARANG</h1>
             <hr>
           </div>
+    
           <div>
+            
+            <!-- Menggunakan onsubmit="return false" agar ketika kita proses data tidak langsung hilang -->
+            <!-- class menggunakan text center agar formulir berada di tengah -->
             <form class="text-center" onsubmit="return false" >
+
                 <div>
                     <div>
                         <label class="col-2">Nama Barang</label>
                         <label >:</label>
                         <input type="text" id="NamaBarang">
                     </div>
-            
+            <!-- menggunakan id agar memudahkan kita untuk memanggilnya -->
                     <div>
                         <label class="col-2">Harga</label>
                         <label >:</label>
@@ -54,13 +60,16 @@
                         <label >:</label>
                         <input type="text" id="Bayar" disabled>
                     </div>
-                </div>     
+                </div>  
+
+                   <!-- tombol  -->
                 <button type="submit" class="btn btn-primary me-5" onclick="hitung()"  >proses</button>
                 <button type="reset" class="btn btn-info">reset</button>
             </form>
           </div>
       </div>
 
+      <!-- memanggil javascript untuk menghitung  -->
     <script src="java1.js"></script>
 
     <!-- Optional JavaScript; choose one of the two! -->

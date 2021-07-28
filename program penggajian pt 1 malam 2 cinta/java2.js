@@ -5,16 +5,16 @@ function proses(){
     var up=document.getElementById("up").value;
     var a=document.getElementById("a").value;
 
-    // Gaji karyawan
+    // menghitung Gaji karyawan
 
     var g=jk*up;
     document.getElementById("g").value=g;
 
-    // Tunjangan anak 10%
+    // menghitung Tunjangan anak 10%
     var ta=g*.1*a;
     document.getElementById("ta").value=ta;
 
-    // Total Gaji
+    // menghitung Total Gaji
     var tg=g+ta;
     document.getElementById("tg").value=tg
 
